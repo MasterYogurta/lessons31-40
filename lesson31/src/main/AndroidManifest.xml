@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="goncharuk.lessons31_40.lesson31" />
+    package="goncharuk.lessons31_40.lesson31">
+
+    <application>
+        <activity android:name=".ActivityLesson31"></activity>
+    </application>
+
+</manifest>

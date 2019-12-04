@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_tv_title" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>

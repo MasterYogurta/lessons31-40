@@ -1,5 +1,6 @@
 package goncharuk.lessons31_40.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -10,6 +11,7 @@ import goncharuk.lessons31_40.BR
 import goncharuk.lessons31_40.R
 import goncharuk.lessons31_40.common.AdapterBaseBinding
 import goncharuk.lessons31_40.databinding.MainActivityBinding
+import goncharuk.lessons31_40.lesson31.ActivityLesson31
 import goncharuk.lessons31_40.model.ModelLessonItem
 
 class MainActivity : AppCompatActivity() {
@@ -22,16 +24,16 @@ class MainActivity : AppCompatActivity() {
         val lessonListAdapter = AdapterBaseBinding<ModelLessonItem>(
             bindingId = BR.lessonItemModel,
             layoutId = R.layout.lesson_list_item,
-            onClickListener = {}
+            onClickListener = { item ->
+                startActivity(Intent(this@MainActivity, item.destination))
+            }
         )
+
         binding.rvLessonList.adapter = lessonListAdapter
         binding.rvLessonList.layoutManager =
             LinearLayoutManager(this@MainActivity, RecyclerView.VERTICAL, false)
         val lessonList = ArrayList<ModelLessonItem>().apply {
-            add(ModelLessonItem("Kek1"))
-            add(ModelLessonItem("Kek2"))
-            add(ModelLessonItem("Kek3"))
-            add(ModelLessonItem("Kek4"))
+            add(ModelLessonItem("Lesson 31", ActivityLesson31::class.java))
         }
         lessonListAdapter.updateList(lessonList)
     }
