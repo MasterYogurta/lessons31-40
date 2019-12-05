@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">lesson33</string>
+
+    <string name="tv_lesson33_title">Lesson 33</string>
+    <string name="btn_save">save</string>
+    <string name="btn_load">load</string>
 </resources>

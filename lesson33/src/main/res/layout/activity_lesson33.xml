@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/cl_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ActivityLesson31">
+        tools:context=".ActivityLesson33">
 
-        <!--    Guidelines -->
+        <!--        Guidelines -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gl_top"
             android:layout_width="0dp"
@@ -17,43 +17,47 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.1" />
 
-        <!--    Views -->
+        <!--        Views -->
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/style_tv_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="@string/tv_lesson31_title"
+            android:text="@string/tv_lesson33_title"
             app:layout_constraintBottom_toBottomOf="@id/gl_top"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btn_web"
+        <EditText
+            android:id="@+id/et_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="web"
+            app:layout_constraintBottom_toTopOf="@id/btn_save"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/btn_map"
-            app:layout_constraintTop_toTopOf="@id/gl_top" />
-
-        <Button
-            android:id="@+id/btn_map"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="map"
-            app:layout_constraintLeft_toRightOf="@id/btn_web"
-            app:layout_constraintRight_toLeftOf="@id/btn_call"
-            app:layout_constraintTop_toTopOf="@id/gl_top" />
-
-        <Button
-            android:id="@+id/btn_call"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="call"
-            app:layout_constraintLeft_toRightOf="@id/btn_map"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/gl_top" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/style_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_load"
+            app:layout_constraintTop_toBottomOf="@id/et_input" />
+
+        <Button
+            android:id="@+id/btn_load"
+            style="@style/style_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_load"
+            app:layout_constraintBottom_toBottomOf="@id/btn_save"
+            app:layout_constraintLeft_toRightOf="@id/btn_save"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_save" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
