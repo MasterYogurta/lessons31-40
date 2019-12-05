@@ -12,6 +12,7 @@ import goncharuk.lessons31_40.R
 import goncharuk.lessons31_40.common.AdapterBaseBinding
 import goncharuk.lessons31_40.databinding.MainActivityBinding
 import goncharuk.lessons31_40.lesson31.ActivityLesson31
+import goncharuk.lessons31_40.lesson32.ActivityLesson32
 import goncharuk.lessons31_40.model.ModelLessonItem
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             LinearLayoutManager(this@MainActivity, RecyclerView.VERTICAL, false)
         val lessonList = ArrayList<ModelLessonItem>().apply {
             add(ModelLessonItem("Lesson 31", ActivityLesson31::class.java))
+            add(ModelLessonItem("Lesson 32", ActivityLesson32::class.java))
         }
         lessonListAdapter.updateList(lessonList)
     }

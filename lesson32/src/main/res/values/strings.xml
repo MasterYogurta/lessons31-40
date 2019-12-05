@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">lesson32</string>
+
+    <string name="tv_lesson32_title">Lesson 32</string>
+
+    <string name="activity_web_view_label">LessonWebView</string>
+    <string name="data_scheme">https</string>
 </resources>
