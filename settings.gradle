@@ -1,4 +1,4 @@
-include ':app', ':lesson33',
+include ':app', ':lesson33', ':lesson34',
         ':common',
         ':lesson31',
         ':lesson32'
