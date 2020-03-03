@@ -1,5 +1,8 @@
-include ':app', ':lesson33', ':lesson34',
+include ':app',
         ':common',
         ':lesson31',
-        ':lesson32'
-rootProject.name='lessons31-40'
+        ':lesson32',
+        ':lesson33',
+        ':lesson34',
+        ':lesson35'
+rootProject.name = 'lessons31-40'
