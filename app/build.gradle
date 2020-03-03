@@ -29,6 +29,7 @@ dependencies {
     api project(path: ':lesson32')
     api project(path: ':lesson33')
     api project(path: ':lesson34')
+    api project(path: ':lesson35')
     api project(path: ':common')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])

@@ -15,6 +15,7 @@ import goncharuk.lessons31_40.lesson31.ActivityLesson31
 import goncharuk.lessons31_40.lesson32.ActivityLesson32
 import goncharuk.lessons31_40.lesson33.ActivityLesson33
 import goncharuk.lessons31_40.lesson34.ActivityLesson34
+import goncharuk.lessons31_40.lesson35.ActivityLesson35
 import goncharuk.lessons31_40.model.ModelLessonItem
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             add(ModelLessonItem(getString(R.string.tv_lesson32_title), ActivityLesson32::class.java))
             add(ModelLessonItem(getString(R.string.tv_lesson33_title), ActivityLesson33::class.java))
             add(ModelLessonItem(getString(R.string.tv_lesson34_title), ActivityLesson34::class.java))
+            add(ModelLessonItem(getString(R.string.tv_lesson35_title), ActivityLesson35::class.java))
         }
         lessonListAdapter.updateList(lessonList)
     }

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">lesson35</string>
+
+    <string name="tv_lesson35_title">Lesson 35</string>
+
+    <string name="tv_hint_id">ID</string>
+    <string name="tv_hint_name">Name</string>
+    <string name="tv_hint_email">Email</string>
+
+    <string name="btn_add">Add</string>
+    <string name="btn_read">Read</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
 </resources>
